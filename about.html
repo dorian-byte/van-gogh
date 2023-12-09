@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Van Gogh</title>
+  </head>
+  <body>
+    <div id="root">
+      <nav>
+        <h1>VINCENT VAN GOGH</h1>
+        <div id="burger" class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a class="current-page-link" href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div id="van-gogh-intro">
+        <div id="text-intro">
+          <h1>ABOUT VINCENT VAN GOGH</h1>
+          <h1>(1853 - 1890)</h1>
+          <p>
+            A Dutch post-impressionist painter renowned for his vivid colors and
+            emotive brushwork.
+          </p>
+          <p>
+            Though he faced mental health struggles and remained largely
+            unrecognized during his lifetime, his work later gained immense
+            fame, influencing 20th-century art. Iconic pieces like "Starry
+            Night" and "Sunflowers" showcase his innovative style and deep
+            emotional expression. Van Gogh's tragic life ended in suicide, but
+            his legacy endures, celebrated for its passion, intensity, and
+            groundbreaking approach to color and form.
+          </p>
+        </div>
+        <img
+          id="van-gogh-img"
+          src="asset/images/Self-Portrait.webp"
+          alt="Self-Portrait"
+        />
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="footer-top-box">
+      <h3>SUBSCRIBE</h3>
+      <div>
+        <input type="text" placeholder="Enter your email" />
+        <button onclick="showAlert()">sign up</button>
+      </div>
+      <p id="footer-input-extra">We will send you news and updates.</p>
+    </div>
+    <div class="copyright-bar">
+      <p>©DESIGNED AND MAINTAINED BY: JAMIE LIU @2023 ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('burger').addEventListener('click', function () {
+      var navLinks = document.querySelector('nav ul');
+      if (navLinks.style.display === 'none' || navLinks.style.display === '') {
+        navLinks.style.display = 'block';
+      } else {
+        navLinks.style.display = 'none';
+      }
+    });
+    const showAlert = () => {
+      alert('function not implemented yet!');
+    };
+  </script>
+</html>

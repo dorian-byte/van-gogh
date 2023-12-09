@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Van Gogh</title>
+  </head>
+  <body>
+    <div id="root">
+      <nav>
+        <h1>VINCENT VAN GOGH</h1>
+        <div id="burger" class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul>
+          <li><a class="current-page-link" href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="works">
+        <h1 class="page-title">VINCENT VAN GOGH</h1>
+        <div class="painting-card">
+          <div class="painting-wrapper">
+            <img
+              class="painting-image"
+              src="asset/images/Starry-Night.png"
+              alt="Van Gogh"
+            />
+            <div class="painting-intro">
+              <div class="painting-header">
+                <h3 class="painting-name">The Starry Night</h3>
+                <h3 class="painting-sub-header">1889</h3>
+              </div>
+              <div class="painting-info">
+                <p>
+                  The Starry Night, oil on canvas by Vincent van Gogh, 1889; in
+                  the Museum of Modern Art, New York City.
+                </p>
+                <button class="more-info-button" onclick="showAlert()">
+                  MORE +
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="painting-card">
+          <div class="painting-wrapper">
+            <div class="painting-intro">
+              <div class="painting-header">
+                <h3 class="painting-name">The Old Tower in the Fields</h3>
+                <h3 class="painting-sub-header">1884</h3>
+              </div>
+              <div class="painting-info">
+                <p>
+                  The Old Tower in the Fields, oil on canvas on cardboard by
+                  Vincent van Gogh, 1884.
+                </p>
+                <button class="more-info-button" onclick="showAlert()">
+                  MORE +
+                </button>
+              </div>
+            </div>
+            <img
+              class="painting-image"
+              src="asset/images/Old-Tower.png"
+              alt="Van Gogh"
+            />
+          </div>
+        </div>
+        <div class="painting-card">
+          <div class="painting-wrapper">
+            <img
+              class="painting-image"
+              src="asset/images/Self-Portrait.png"
+              alt="Van Gogh"
+            />
+            <div class="painting-intro">
+              <div class="painting-header">
+                <h3 class="painting-name">SELF-PORTRAIT</h3>
+                <h3 class="painting-sub-header">1887</h3>
+              </div>
+              <div class="painting-info">
+                <p>
+                  Self-Portrait, oil painting by Vincent van Gogh, 1887; in the
+                  Rijksmuseum, Amsterdam.
+                </p>
+                <button class="more-info-button" onclick="showAlert()">
+                  MORE +
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="painting-card">
+          <div class="painting-wrapper">
+            <div class="painting-intro">
+              <div class="painting-header">
+                <h3 class="painting-name">WHEATFIELD WITH CROWS</h3>
+                <h3 class="painting-sub-header">1890</h3>
+              </div>
+              <div class="painting-info">
+                <p>
+                  Wheatfield with Crows, oil on canvas by Vincent van Gogh,
+                  1890; in the Van Gogh Museum, Amsterdam.
+                </p>
+                <button class="more-info-button" onclick="showAlert()">
+                  MORE +
+                </button>
+              </div>
+            </div>
+            <img
+              class="painting-image"
+              src="asset/images/Wheatfield-Crows.png"
+              alt="Van Gogh"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="footer-top-box">
+      <h3>SUBSCRIBE</h3>
+      <div>
+        <input type="text" placeholder="Enter your email" />
+        <button onclick="showAlert()">sign up</button>
+      </div>
+      <p id="footer-input-extra">We will send you news and updates.</p>
+    </div>
+    <div class="copyright-bar">
+      <p>©DESIGNED AND MAINTAINED BY: JAMIE LIU @2023 ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('burger').addEventListener('click', function () {
+      var navLinks = document.querySelector('nav ul');
+      if (navLinks.style.display === 'none' || navLinks.style.display === '') {
+        navLinks.style.display = 'block';
+      } else {
+        navLinks.style.display = 'none';
+      }
+    });
+    const showAlert = () => {
+      alert('function not implemented yet!');
+    };
+  </script>
+</html>
